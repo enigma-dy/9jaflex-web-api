@@ -1,1 +1,1 @@
-GET localhost:5000/moives
+GET http://localhost:5000/users
