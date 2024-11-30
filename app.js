@@ -15,7 +15,7 @@ dotenv.config();
 connectToDatabase();
 
 const accessLogStream = require('./config/logger');
-const corsOptions = require('./config/cors')([]);
+const corsOptions = require('./config/cors')(["http://localhost:1234", "https://ninejaflex-web-api.onrender.com"]);
 
 // Middleware
 app.use(morgan('combined', { stream: accessLogStream }));
